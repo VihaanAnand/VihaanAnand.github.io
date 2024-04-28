@@ -1,0 +1,86 @@
+* {
+        font-family: 'SF-Pro';
+}
+h1, h2, h3, h4 {
+        font-family: 'SF-Pro-Rounded-Regular';
+        font-size: 24px;
+}
+table, td, th {
+        border: 1px solid #000000;
+        margin-bottom: 16px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 16px;
+}
+td, th {
+        padding: 8px;
+        text-align: center;
+}
+h1 {
+        font-family: 'SF-Pro-Rounded-Bold';
+        font-size: 64px;
+        text-align: center;
+}
+h2 {
+        font-family: 'SF-Pro-Rounded-Medium';
+        font-size: 32px;
+}
+li {
+        counter-increment: item;
+        display: table;
+        margin-bottom: 16px;
+}
+li::before {
+        content: counters(item, "") ")";
+        display: table-cell;
+        padding-right: 8px;    
+}
+li li {
+        margin: 16px;
+}
+li li::before {
+        content: counters(item, ".") ")";
+}
+ol {
+        counter-reset: item;
+        padding: 0px;
+}
+p {
+        text-align: justify;
+}
+table {
+        border-spacing: 0px;
+}
+th {
+        background-color: #abcdef;
+        font-family: 'SF-Pro-Rounded-Bold';
+}
+.card, .cardsmall {
+        border: 1px solid #000000;
+        border-radius: 64px;
+        display: table;
+        margin: 16px;
+        padding: 64px;
+}
+.card:hover, .cardsmall:hover {
+        background-color: #abcdef88;
+        box-shadow: 8px 8px 8px 8px #eeeeee;
+}
+.cardsmall {
+        width: 40%;
+}
+.nav-link {
+        padding-left: 64px;
+        padding-right: 64px;
+}
+#header {
+        border-bottom: 1px solid #000000;
+        padding-bottom: 60px;
+        padding-top: 60px;
+}
+#footer {
+        background-color: #abcdef;
+        margin: 0px;
+        padding: 64px;
+        text-align: center;
+}
