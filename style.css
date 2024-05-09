@@ -1,9 +1,12 @@
 * {
+        background-color: #123456;
+        color: #ffffff;
         font-family: 'SF-Pro';
 }
 h1, h2, h3, h4 {
         font-family: 'SF-Pro-Rounded-Regular';
         font-size: 24px;
+        text-align: center;
 }
 table, td, th {
         border: 1px solid #000000;
@@ -15,6 +18,25 @@ table, td, th {
 td, th {
         padding: 8px;
         text-align: center;
+}
+a {
+        color: #123456;
+}
+button {
+        background-color: #abcdef;
+        border: 0px;
+        border-radius: 64px;
+        color: #123456;
+        font-size: 32px;
+        margin: 64px;
+        padding-bottom: 32px;
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 32px;
+}
+button a {
+        background-color: #abcdef;
+        text-decoration: none;
 }
 h1 {
         font-family: 'SF-Pro-Rounded-Bold';
@@ -46,9 +68,11 @@ ol {
         padding: 0px;
 }
 p {
+        line-height: 2;
         text-align: justify;
 }
 table {
+        border: 0px;
         border-spacing: 0px;
 }
 th {
@@ -56,31 +80,52 @@ th {
         font-family: 'SF-Pro-Rounded-Bold';
 }
 .card, .cardsmall {
-        border: 1px solid #000000;
+        background-color: #345678;
+        border: 1px solid #ffffff;
         border-radius: 64px;
         display: table;
-        margin: 16px;
+        margin: 0px;
         padding: 64px;
+        width: calc(100vw - 160px);
 }
-.card:hover, .cardsmall:hover {
-        background-color: #abcdef88;
-        box-shadow: 8px 8px 8px 8px #eeeeee;
+.card h1, .card h2, .card h3, .card h4, .card p, .cardsmall h1, .cardsmall h2, .cardsmall h3, .cardsmall h4, .cardsmall p * {
+        background-color: #345678;
 }
 .cardsmall {
-        width: 40%;
+        float: right;
+        margin: 8px;
+        width: calc(49.87vw - 160px);
+}
+.centre {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+}
+.circle {
+        border-radius: 100%;
+        box-shadow: 0 0 32px #abcdef;
+        margin-top: 32px;
+}
+.headp {
+        width: 64vw;
 }
 .nav-link {
         padding-left: 64px;
         padding-right: 64px;
 }
-#header {
-        border-bottom: 1px solid #000000;
-        padding-bottom: 60px;
-        padding-top: 60px;
-}
 #footer {
         background-color: #abcdef;
+        color: #123456;
         margin: 0px;
         padding: 64px;
         text-align: center;
+}
+#footer * {
+        background-color: #abcdef;
+}
+#header {
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 60px;
+        padding-top: 60px;
 }
