@@ -114,6 +114,10 @@ th {
         padding-left: 64px;
         padding-right: 64px;
 }
+.nav-link a {
+        color: #ffffff;
+        text-decoration: none;
+}
 #footer {
         background-color: #abcdef;
         color: #123456;
