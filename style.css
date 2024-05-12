@@ -47,6 +47,9 @@ h2 {
         font-family: 'SF-Pro-Rounded-Medium';
         font-size: 32px;
 }
+h4 {
+        font-size: 20px;
+}
 li {
         counter-increment: item;
         display: table;
