@@ -97,7 +97,7 @@ th {
 .cardsmall {
         float: right;
         margin: 8px;
-        width: calc(49.87vw - 160px);
+        width: calc(49.69vw - 160px);
 }
 .centre {
         display: block;
@@ -109,6 +109,15 @@ th {
         border-radius: 100%;
         box-shadow: 0 0 32px #abcdef;
         margin-top: 32px;
+}
+.goodhover {
+        scale: 1;
+        transition: all 2s ease-in-out;
+}
+.goodhover:hover {
+        box-shadow: 0 0 16px #abcdef;
+        scale: 1.08;
+        transition: all 2s ease-in-out;
 }
 .headp {
         width: 64vw;
