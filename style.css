@@ -52,24 +52,67 @@ h4 {
         font-size: 20px;
 }
 li {
-        counter-increment: item;
-        display: table;
         margin-bottom: 16px;
+        margin-top: 16px;
 }
-li::before {
-        content: counters(item, "") ")";
-        display: table-cell;
-        padding-right: 8px;    
+ol {counter-reset: list;
 }
-li li {
-        margin: 16px;
+ol > li {
+        counter-increment: list;
 }
-li li::before {
-        content: counters(item, ".") ")";
+ol > li {
+        list-style-type: none;
 }
-ol {
-        counter-reset: item;
-        padding: 0px;
+ol > li::before {
+        content: counter(list) ") ";
+}
+ol > li > ol {
+        counter-reset: sublist;
+}
+ol > li > ol > li {
+        counter-increment: sublist;
+}
+ol > li > ol > li::before {
+        content: counter(sublist, lower-alpha) ") ";
+}
+ol > li > ol > li > ol {
+        counter-reset: subsublist;
+}
+ol > li > ol > li > ol > li {
+        counter-increment: subsublist;
+}
+ol > li > ol > li > ol > li::before {
+        content: counter(subsublist, lower-roman) ") ";
+}
+ol > li > ol > li > ol > li > ol {
+        counter-reset: subsubsublist;
+}
+ol > li > ol > li > ol > li > ol > li {
+        counter-increment: subsubsublist;
+}
+ol > li > ol > li > ol > li > ol > li::before {
+        content: counter(subsubsublist, decimal) ") ";
+}
+ol > li > ol > li > ol > li > ol > li > ol {
+        counter-reset: subsubsubsublist;
+}
+ol > li > ol > li > ol > li > ol > li > ol > li {
+        counter-increment: subsubsubsublist;
+}
+ol > li > ol > li > ol > li > ol > li > ol > li::before {
+        content: counter(subsubsubsublist, lower-alpha) ") ";
+}
+ol > li > ol > li > ol > li > ol > li > ol > li > ol {
+        counter-reset: subsubsubsubsublist;
+}
+ol > li > ol > li > ol > li > ol > li > ol > li > ol > li {
+        counter-increment: subsubsubsubsublist;
+}
+ol > li > ol > li > ol > li > ol > li > ol > li > ol > li::before {
+        content: counter(subsubsubsubsublist, lower-roman) ") ";
+}
+ol li::before {
+        content: counters(list, ".") ") ";
 }
 p {
         line-height: 2;
@@ -87,7 +130,7 @@ th {
         background-color: #48484a;
 }
 .active-nav-link {
-        background-color: #48484a;
+        background-color: #8e8e93;
         border-radius: 32px;
         margin: 8px;
         padding-bottom: 32px;
@@ -96,7 +139,7 @@ th {
         padding-top: 32px;
 }
 .active-nav-link a {
-        background-color: #48484a;
+        background-color: #8e8e93;
         color: #f2f2f7;
         text-decoration: none;
 }
@@ -104,15 +147,19 @@ th {
         background-color: #48484a;
         border: 0px;
         border-radius: 64px;
-        display: table;
-        margin: 0px;
+        display: block;
+        left: auto;
+        margin: 64px;
         padding: 64px;
-        width: calc(100vw - 160px);
+        right: auto;
+        width: calc(100vw - 286px);
 }
 .centre {
         display: block;
+        left: auto;
         margin-left: auto;
         margin-right: auto;
+        right: auto;
         text-align: center;
 }
 .circle {
@@ -122,12 +169,12 @@ th {
 }
 .goodhover {
         scale: 1;
-        transition: all 2s ease-in-out;
+        transition: all 1s ease-in-out;
 }
 .goodhover:hover {
         box-shadow: 0 0 16px #f2f2f7;
-        scale: 1.08;
-        transition: all 2s ease-in-out;
+        scale: 1.04;
+        transition: all 1s ease-in-out;
 }
 .headp {
         width: 64vw;
@@ -137,6 +184,20 @@ th {
         padding-right: 64px;
 }
 .nav-link a {
+        color: #f2f2f7;
+        text-decoration: none;
+}
+.nav-link:hover {
+        background-color: #48484a;
+        border-radius: 32px;
+        margin: 8px;
+        padding-bottom: 32px;
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-top: 32px;
+}
+.nav-link:hover a {
+        background-color: #48484a;
         color: #f2f2f7;
         text-decoration: none;
 }
@@ -155,10 +216,11 @@ th {
 }
 #header {
         border-bottom: 1px solid #f2f2f7;
+        left: 0;
         padding-bottom: 60px;
         padding-top: 60px;
         position: fixed;
-        top: 0;
-        left: 0;
         right: 0;
+        top: 0;
+        z-index: 16777216;
 }
