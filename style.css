@@ -28,7 +28,8 @@ button {
         border-radius: 64px;
         color: #f2f2f7;
         font-size: 32px;
-        margin: 64px;
+        margin-left: 64px;
+        margin-right: 64px;
         padding-bottom: 32px;
         padding-left: 64px;
         padding-right: 64px;
