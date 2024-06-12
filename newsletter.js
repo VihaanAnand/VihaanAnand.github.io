@@ -8,13 +8,9 @@ form.addEventListener("submit", async function(event) {
                         method: "POST",
                         body: new URLSearchParams(data)
                 });
-                console.log("s1 success");
                 const responseText = await response.text();
-                console.log("s2 success");
                 alert(responseText);
-                console.log("s3 success");
                 form.reset();
-                console.log("s4 success");
         }
         catch (error) {
                 alert(error);
