@@ -52,6 +52,18 @@ h2 {
 h4 {
         font-size: 20px;
 }
+input {
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        font-size: 32px;
+        height: 8vh;
+        margin: 64px;
+        padding: 64px;
+        width: 64vw;
+}
+label {
+        font-size: 32px;
+}
 li {
         margin-bottom: 16px;
         margin-top: 16px;
