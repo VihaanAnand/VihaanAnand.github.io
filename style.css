@@ -180,6 +180,9 @@ th {
         box-shadow: 0 0 32px #f2f2f7;
         margin-top: 32px;
 }
+.code-inline {
+        font-family: "SF-Mono-Regular";
+}
 .goodhover {
         scale: 1;
         transition: all 1s ease-in-out;
