@@ -133,6 +133,7 @@ p {
 }
 table {
         border: 0px;
+        border-radius: 32px;
 }
 td {
         border-radius: 32px;
