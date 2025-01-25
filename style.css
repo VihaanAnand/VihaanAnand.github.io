@@ -10,10 +10,10 @@ h1, h2, h3, h4 {
 }
 table, td, th {
         border: 1px solid #f2f2f7;
-        margin-bottom: 16px;
+        /* margin-bottom: 16px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 16px;
+        margin-top: 16px; */
 }
 td, th {
         padding: 8px;
@@ -143,8 +143,7 @@ p {
         text-align: justify;
 }
 table {
-        border: 0px;
-        border-spacing: 0px;
+        border: 0px;=
 }
 th {
         background-color: #0a84ff;
