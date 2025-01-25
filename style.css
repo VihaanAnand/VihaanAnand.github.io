@@ -5,15 +5,14 @@ body {
 }
 h1, h2, h3, h4 {
         font-family: 'SF-Pro-Rounded-Regular';
-        font-size: 24px;
         text-align: center;
 }
 table, td, th {
         border: 1px solid #f2f2f7;
-        /* margin-bottom: 16px;
+        margin-bottom: 16px;
         margin-left: 0px;
         margin-right: 0px;
-        margin-top: 16px; */
+        margin-top: 16px;
 }
 td, th {
         padding: 8px;
@@ -26,6 +25,7 @@ button {
         background-color: #0a84ff;
         border: 0px;
         border-radius: 64px;
+        font-family: 'SF-Pro-Rounded-Light';
         font-size: 32px;
         margin-left: 64px;
         margin-right: 64px;
@@ -47,17 +47,23 @@ h2 {
         font-family: 'SF-Pro-Rounded-Medium';
         font-size: 32px;
 }
+h3 {
+        font-size: 24px;
+}
 h4 {
         font-size: 20px;
 }
 input {
         border: 1px solid #ffffff;
         border-radius: 8px;
+        font-family: 'SF-Compact-Text-Thin';
         font-size: 32px;
         height: 8vh;
-        margin: 64px;
-        padding: 64px;
-        width: 64vw;
+        margin: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+        width: calc(100% - 128px);
 }
 label {
         font-size: 32px;
@@ -69,72 +75,55 @@ li {
 ol {
         counter-reset: level1;
 }
-
 ol > li {
         list-style-type: none;
         counter-increment: level1;
 }
-
 ol > li::before {
         content: counter(level1) ") ";
 }
-
 ol ol {
         counter-reset: level2;
 }
-
 ol ol > li {
         counter-increment: level2;
 }
-
 ol ol > li::before {
         content: counter(level2, lower-alpha) ") ";
 }
-
 ol ol ol {
         counter-reset: level3;
 }
-
 ol ol ol > li {
         counter-increment: level3;
 }
-
 ol ol ol > li::before {
         content: counter(level3, lower-roman) ") ";
 }
-
 ol ol ol ol {
         counter-reset: level4;
 }
-
 ol ol ol ol > li {
         counter-increment: level4;
 }
-
 ol ol ol ol > li::before {
         content: "(" counter(level4, decimal) ") ";
 }
-
 ol ol ol ol ol {
         counter-reset: level5;
 }
-
 ol ol ol ol ol > li {
         counter-increment: level5;
 }
-
 ol ol ol ol ol > li::before {
         content: "(" counter(level5, lower-alpha) ") ";
 }
-
 ol ol ol ol ol ol {
         counter-reset: level6;
 }
-
 ol ol ol ol ol ol > li {
         counter-increment: level6;
 }
-
 ol ol ol ol ol ol > li::before {
         content: "(" counter(level6, lower-roman) ") ";
 }
@@ -143,7 +132,10 @@ p {
         text-align: justify;
 }
 table {
-        border: 0px;=
+        border: 0px;
+}
+td {
+        border-radius: 32px;
 }
 th {
         background-color: #0a84ff;
@@ -191,7 +183,7 @@ th {
         margin-top: 32px;
 }
 .code-inline {
-        font-family: "SF-Mono-Regular";
+        font-family: "SF-Mono-Light";
 }
 .goodhover {
         scale: 1;
@@ -199,7 +191,7 @@ th {
 }
 .goodhover:hover {
         box-shadow: 0 0 16px #f2f2f7;
-        scale: 1.04;
+        scale: 1.01;
         transition: all 1s ease-in-out;
 }
 .headp {
@@ -236,9 +228,6 @@ th {
         margin: 0px;
         padding: 64px;
         text-align: center;
-}
-#footer * {
-        background-color: #48484a;
 }
 #header {
         background-color: #5c5c5e;
