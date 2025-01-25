@@ -1,4 +1,4 @@
-* {
+body {
         background-color: #1c1c1e;
         color: #f2f2f7;
         font-family: 'SF-Pro';
@@ -26,7 +26,6 @@ button {
         background-color: #0a84ff;
         border: 0px;
         border-radius: 64px;
-        color: #f2f2f7;
         font-size: 32px;
         margin-left: 64px;
         margin-right: 64px;
@@ -36,7 +35,6 @@ button {
         padding-top: 32px;
 }
 button a {
-        background-color: #0a84ff;
         color: #f2f2f7;
         text-decoration: none;
 }
@@ -68,64 +66,77 @@ li {
         margin-bottom: 16px;
         margin-top: 16px;
 }
-ol {counter-reset: list;
+ol {
+        counter-reset: level1;
 }
-ol > li {
-        counter-increment: list;
-}
+
 ol > li {
         list-style-type: none;
+        counter-increment: level1;
 }
+
 ol > li::before {
-        content: counter(list) ") ";
+        content: counter(level1) ") ";
 }
-ol > li > ol {
-        counter-reset: sublist;
+
+ol ol {
+        counter-reset: level2;
 }
-ol > li > ol > li {
-        counter-increment: sublist;
+
+ol ol > li {
+        counter-increment: level2;
 }
-ol > li > ol > li::before {
-        content: counter(sublist, lower-alpha) ") ";
+
+ol ol > li::before {
+        content: counter(level2, lower-alpha) ") ";
 }
-ol > li > ol > li > ol {
-        counter-reset: subsublist;
+
+ol ol ol {
+        counter-reset: level3;
 }
-ol > li > ol > li > ol > li {
-        counter-increment: subsublist;
+
+ol ol ol > li {
+        counter-increment: level3;
 }
-ol > li > ol > li > ol > li::before {
-        content: counter(subsublist, lower-roman) ") ";
+
+ol ol ol > li::before {
+        content: counter(level3, lower-roman) ") ";
 }
-ol > li > ol > li > ol > li > ol {
-        counter-reset: subsubsublist;
+
+ol ol ol ol {
+        counter-reset: level4;
 }
-ol > li > ol > li > ol > li > ol > li {
-        counter-increment: subsubsublist;
+
+ol ol ol ol > li {
+        counter-increment: level4;
 }
-ol > li > ol > li > ol > li > ol > li::before {
-        content: counter(subsubsublist, decimal) ") ";
+
+ol ol ol ol > li::before {
+        content: "(" counter(level4, decimal) ") ";
 }
-ol > li > ol > li > ol > li > ol > li > ol {
-        counter-reset: subsubsubsublist;
+
+ol ol ol ol ol {
+        counter-reset: level5;
 }
-ol > li > ol > li > ol > li > ol > li > ol > li {
-        counter-increment: subsubsubsublist;
+
+ol ol ol ol ol > li {
+        counter-increment: level5;
 }
-ol > li > ol > li > ol > li > ol > li > ol > li::before {
-        content: counter(subsubsubsublist, lower-alpha) ") ";
+
+ol ol ol ol ol > li::before {
+        content: "(" counter(level5, lower-alpha) ") ";
 }
-ol > li > ol > li > ol > li > ol > li > ol > li > ol {
-        counter-reset: subsubsubsubsublist;
+
+ol ol ol ol ol ol {
+        counter-reset: level6;
 }
-ol > li > ol > li > ol > li > ol > li > ol > li > ol > li {
-        counter-increment: subsubsubsubsublist;
+
+ol ol ol ol ol ol > li {
+        counter-increment: level6;
 }
-ol > li > ol > li > ol > li > ol > li > ol > li > ol > li::before {
-        content: counter(subsubsubsubsublist, lower-roman) ") ";
-}
-ol li::before {
-        content: counters(list, ".") ") ";
+
+ol ol ol ol ol ol > li::before {
+        content: "(" counter(level6, lower-roman) ") ";
 }
 p {
         line-height: 2;
@@ -231,6 +242,7 @@ th {
         background-color: #48484a;
 }
 #header {
+        background-color: #5c5c5e;
         border-bottom: 1px solid #f2f2f7;
         left: 0;
         padding-bottom: 60px;
