@@ -7,7 +7,10 @@ currently being supported with security updates. -->
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 1.x     | :white_check_mark: |
+| 2.0.x   | :white_check_mark: |
+| 1.x.x   | :x:                |
+<!-- | 4.0.x   | :white_check_mark: |
+| < 4.0   | :x:                | -->
 
 ## Reporting a Vulnerability
 
@@ -16,7 +19,8 @@ currently being supported with security updates. -->
 Tell them where to go, how often they can expect to get an update on a
 reported vulnerability, what to expect if the vulnerability is accepted or
 declined, etc. -->
-If you notice a vulnerability, you may do one or more of these things:
-* Create an issue and fill out the details.
-* Create a pull request with a possible solution to the vulnerability. Make sure to mention and explain the vulnerability and fill out the details.
-* Email macos14sonoma@gmail.com. Make sure to mention and explain the vulnerability.
+
+To report a vulnerability, please do one or more of these things:
+* Create an issue, and explain the vulnerability in as much detail as possible.
+* Create a pull request with a possible solution to the vulnerability. Make sure to mention and explain the vulnerability.
+* Email vihaan.s.anand@gmail.com. Make sure to mention and explain the vulnerability.

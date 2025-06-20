@@ -1,41 +1,38 @@
 ---
 name: Bug report
-about: Report a bug to help the project improve.
-title: 'BUG ID #[id] [title of bug]'
-labels: bug
-assignees: VihaanAnand
+about: Create a report to help us improve
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
-# Details About Bug
-**Explain the bug**: Write a clear and detailed description of the bug.
+**Describe the bug**
+A clear and concise description of what the bug is.
 
-**Steps to reproduce**: Write a clear and detailed description of how you noticed the bug.
-1. Item
-2. Item
-3. Item
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
 
-**Expected behaviour**: Write a clear and detailed description of what you expected to happen instead of the bug.
+**Expected behavior**
+A clear and concise description of what you expected to happen.
 
-**Proof and screenshots**: Provide any proof, screenshots, or screen recordings of this bug that could assist in fixing it.
+**Screenshots**
+If applicable, add screenshots to help explain your problem.
 
-# Details About Device
-**Device**: What device were you using? Be as detailed as possible. (Ex. MacBook Pro 2024, iMac with M1 chip, iPhone XR, etc.)
+**Desktop (please complete the following information):**
+ - OS: [e.g. iOS]
+ - Browser [e.g. chrome, safari]
+ - Version [e.g. 22]
 
-**OS**: What operating system was that device running? Be as detailed as possible. (Ex. macOS 14.5 Beta 2, macOS Sonoma, iOS 17.4.3, Windows 11, etc.)
+**Smartphone (please complete the following information):**
+ - Device: [e.g. iPhone6]
+ - OS: [e.g. iOS8.1]
+ - Browser [e.g. stock browser, safari]
+ - Version [e.g. 22]
 
-**Browser**: What browser were you using? Be as detailed as possible. (Ex. Safari 11, Chrome 124.0.6367.119, Edge 122, etc.)
-
-# Other Details
-**Urgency**: How urgent is the bug? Rate on a scale of 1 (not urgent) to 10 (extremely urgent). Then, multiply by 0.8.
-
-**Contact details**:
-| Method | Details |
-| ------ | ------- |
-| Email | *required* |
-| GitHub Username | *required* |
-| Phone Number | *optional* |
-| Other | *optional* |
-
-# Other
-FILL OUT THE TITLE OF THE ISSUE ACCORDING TO THE TEMPLATE. GIVE IT AN ID AND A TITLE.
+**Additional context**
+Add any other context about the problem here.
