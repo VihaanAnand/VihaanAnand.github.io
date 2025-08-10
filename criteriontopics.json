@@ -1,5 +1,6 @@
 {
         "Lincoln-Douglas": {
+                "order": ["Sept-Oct '24", "Nov-Dec '24", "Jan-Feb '25", "Mar-Apr '25", "Nats '25", "Sept-Oct '25", "NOF Aug-Oct '25"],
                 "Sept-Oct '24": "Resolved: The United States ought to require that workers receive a living wage.",
                 "Nov-Dec '24": "Resolved: The United States ought to adopt a wealth tax.", 
                 "Jan-Feb '25": "Resolved: The United States ought to become party to the United Nations Convention on the Law of the Sea and/or the Rome Statute of the International Criminal Court.",
@@ -9,6 +10,7 @@
                 "NOF Aug-Oct '25": "Resolved: Physical education ought to be a major educational priority in K–12 schools."
         },
         "Public Forum": {
+                "order": ["Sept-Oct '24", "Nov-Dec '24", "Jan '25", "Feb '25", "Mar '25", "Apr '25", "Nats '25", "Sept-Oct '25", "NOF Aug-Oct '25"],
                 "Sept-Oct '24": "Resolved: The United States federal government should substantially expand its surveillance infrastructure along its southern border.",
                 "Nov-Dec '24": "Resolved: The United States should substantially reduce its military support of Taiwan.", 
                 "Jan '25": "Resolved: The African Union should grant diplomatic recognition to the Republic of Somaliland as an independent state.",
@@ -20,10 +22,12 @@
                 "NOF Aug-Oct '25": "Resolved: Physical education ought to be a major educational priority in K–12 schools."
         },
         "Policy Debate": {
+                "order": ["24-25", "25-26"],
                 "24-25": "Resolved: The United States federal government should significantly strengthen its protection of domestic intellectual property rights in copyrights, patents, and/or trademarks.",
                 "25-26": "Resolved: The United States federal government should significantly increase its exploration and/or development of the Arctic."
         },
         "Big Questions": {
+                "order": ["24-25", "25-26"],
                 "24-25": "United States federal government should significantly increase its exploration and/or development of the Arctic.",
                 "25-26": "Resolved: Religious belief is a prerequisite for morality."
         }
