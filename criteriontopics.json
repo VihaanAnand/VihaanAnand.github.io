@@ -1,6 +1,6 @@
 {
         "Lincoln-Douglas": {
-                "order": ["Sept-Oct '24", "Nov-Dec '24", "Jan-Feb '25", "Mar-Apr '25", "Nats '25", "Sept-Oct '25", "Nov-Dec '25", "NOF Aug-Oct '25", "NOF Nov-Jan '25"],
+                "order": ["Sept-Oct '24", "Nov-Dec '24", "Jan-Feb '25", "Mar-Apr '25", "Nats '25", "Sept-Oct '25", "Nov-Dec '25", "Jan-Feb '26", "NOF Aug-Oct '25", "NOF Nov-Jan '25"],
                 "Sept-Oct '24": "Resolved: The United States ought to require that workers receive a living wage.",
                 "Nov-Dec '24": "Resolved: The United States ought to adopt a wealth tax.", 
                 "Jan-Feb '25": "Resolved: The United States ought to become party to the United Nations Convention on the Law of the Sea and/or the Rome Statute of the International Criminal Court.",
@@ -8,11 +8,12 @@
                 "Nats '25": "Resolved: Violent revolution is a just response to political oppression.",
                 "Sept-Oct '25": "Resolved: In the United States criminal justice system, plea bargaining is just.",
                 "Nov-Dec '25": "Resolved: The United States ought to rewild substantial tracts of land.",
+                "Jan-Feb '25": "Resolved: The possession of nuclear weapons is immoral.",
                 "NOF Aug-Oct '25": "Resolved: Physical education ought to be a major educational priority in K–12 schools.",
                 "NOF Nov-Jan '25": "Resolved: Democracy and social media are incompatible."
         },
         "Public Forum": {
-                "order": ["Sept-Oct '24", "Nov-Dec '24", "Jan '25", "Feb '25", "Mar '25", "Apr '25", "Nats '25", "Sept-Oct '25", "Nov-Dec '25", "NOF Aug-Oct '25", "NOF Nov-Jan '25"],
+                "order": ["Sept-Oct '24", "Nov-Dec '24", "Jan '25", "Feb '25", "Mar '25", "Apr '25", "Nats '25", "Sept-Oct '25", "Nov-Dec '25", "Jan '26", "NOF Aug-Oct '25", "NOF Nov-Jan '25"],
                 "Sept-Oct '24": "Resolved: The United States federal government should substantially expand its surveillance infrastructure along its southern border.",
                 "Nov-Dec '24": "Resolved: The United States should substantially reduce its military support of Taiwan.", 
                 "Jan '25": "Resolved: The African Union should grant diplomatic recognition to the Republic of Somaliland as an independent state.",
@@ -22,6 +23,7 @@
                 "Nats '25": "Resolved: On balance, in the United States, the benefits of presidential executive orders outweigh the harms.",
                 "Sept-Oct '25": "Resolved: The United Kingdom should rejoin the European Union.",
                 "Nov-Dec '25": "Resolved: The United States federal government should require technology companies to provide lawful access to encrypted communications.",
+                "Jan '26": "Resolved: The People’s Republic of China should substantially reduce its international extraction of natural resources.",
                 "NOF Aug-Oct '25": "Resolved: Physical education ought to be a major educational priority in K–12 schools.",
                 "NOF Nov-Jan '25": "Resolved: Democracy and social media are incompatible."
         },
